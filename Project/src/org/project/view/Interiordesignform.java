@@ -36,6 +36,7 @@ public class Interiordesignform extends javax.swing.JInternalFrame {
     MouseListener mouseListener = new MouseAdapter(){
     
     };
+    
     /**
      * Creates new form Interiordesignform
      * add jscrollpanel view design 
