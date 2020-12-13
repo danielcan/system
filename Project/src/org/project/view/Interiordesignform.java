@@ -5,9 +5,6 @@
  */
 package org.project.view;
 
-
-
-
 //import javax.swing.JScrollPane;
 //import javax.swing.JList;
 import java.awt.event.MouseAdapter;
@@ -28,39 +25,36 @@ import org.project.control.Controlview;
  */
 public class Interiordesignform extends javax.swing.JInternalFrame {
 
-   //Controlview ctne = new Controlview();
+    //Controlview ctne = new Controlview();
     BackgroundPanel bgp = new BackgroundPanel();
 //    Controlview ctne = new Controlview();
     Controlview ctne = new Controlview();
     private DefaultListModel listModel = new DefaultListModel();
-    MouseListener mouseListener = new MouseAdapter(){
-    
+    MouseListener mouseListener = new MouseAdapter() {
+
     };
-    
+
     /**
-     * Creates new form Interiordesignform
-     * add jscrollpanel view design 
+     * Creates new form Interiordesignform add jscrollpanel view design
      */
     public Interiordesignform() {
-       // this.ctne = new Controlview(jList1);
+        // this.ctne = new Controlview(jList1);
         initComponents();
-        
-        
+
         this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
         JListCustomRendererExample list = new JListCustomRendererExample(jList1);
         ctne.llenado(jPanel2, title);
         ctne.llenado(jPanel2, title);
-     //   this.setContentPane(bgp);
-       // Controlview ctne = new Controlview(jList1);
-     //   ctne.addcontrol(jScrollPane2,jPanel2);
-       // ctne.objetoBase();
-      //  ctne.addcontrol(jList1,jPanel2);
-      //  jScrollPane2.getComponentListeners();
+        //   this.setContentPane(bgp);
+        // Controlview ctne = new Controlview(jList1);
+        //   ctne.addcontrol(jScrollPane2,jPanel2);
+        // ctne.objetoBase();
+        //  ctne.addcontrol(jList1,jPanel2);
+        //  jScrollPane2.getComponentListeners();
     }
 
-    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -132,10 +126,10 @@ public class Interiordesignform extends javax.swing.JInternalFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-   
+
     /**
-     * 
-     * @param evt 
+     *
+     * @param evt
      */
     private void jList1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jList1MouseClicked
         // TODO add your handling code here:
@@ -143,9 +137,9 @@ public class Interiordesignform extends javax.swing.JInternalFrame {
         {
             int posicion = jList1.locationToIndex(evt.getPoint());
             System.out.println("La posicion es " + posicion);
-            
-            ctne.entryMouse(jPanel2,posicion);
-         }
+
+            ctne.entryMouse(jPanel2, posicion);
+        }
     }//GEN-LAST:event_jList1MouseClicked
 
 
@@ -157,5 +151,4 @@ public class Interiordesignform extends javax.swing.JInternalFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
-   
 }
