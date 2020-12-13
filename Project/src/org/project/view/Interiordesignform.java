@@ -45,6 +45,7 @@ public class Interiordesignform extends javax.swing.JInternalFrame {
        // this.ctne = new Controlview(jList1);
         initComponents();
         
+        
         this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         BasicInternalFrameUI bi = (BasicInternalFrameUI) this.getUI();
         bi.setNorthPane(null);
