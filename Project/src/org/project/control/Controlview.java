@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.DefaultListModel;
 import javax.swing.ImageIcon;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 //import javax.swing.SwingUtilities;
 
@@ -217,7 +218,20 @@ public class Controlview {
         Objectview tmp = new Objectview( g );
         //coloca al objeto creado en una posicion aleatoria
         tmp.setLocation( rndNum( this.contenedor.getWidth() - tmp.getWidth() )  , rndNum(this.contenedor.getHeight()-tmp.getHeight() ) );        
-        //agrega el objeto en el MAP
+        Component f = null;
+        
+        if(tmp.getLocation().getX()== -598){
+       
+          
+       
+        }
+      //  tmp.getLocation().getY();
+      //  System.out.println("x"+tmp.getLocation().getX());
+    //    System.out.println(tmp.getLocation().getY());
+     //   mouseDragged();
+        
+        
+//agrega el objeto en el MAP
         map.put("Objeto " + this.contador_de_objetos, tmp );        
         
 //        //agrega el objeto en el JPanel

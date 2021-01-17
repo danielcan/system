@@ -11,9 +11,11 @@ import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.util.ArrayList;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -59,6 +61,8 @@ public class Objectview extends JLabel implements MouseListener, MouseMotionList
     private int nuevo_X = 1;
     private int nuevo_Y = 1;
 
+    
+    private int almace = 0 ;
     /*
     
     **/
@@ -85,6 +89,7 @@ public class Objectview extends JLabel implements MouseListener, MouseMotionList
         this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         this.setSize(d);
         this.setPreferredSize(d);
+        this.almace = posic;
         if (posic == 0) {
             this.setIcon(new ImageIcon(getClass().getResource("/org/project/minis/Burners-simple.png")));
         } else if (posic == 1) {
@@ -154,6 +159,39 @@ public class Objectview extends JLabel implements MouseListener, MouseMotionList
         offset = new Point((int) current.getX() - (int) start_drag.getX(), (int) current.getY() - (int) start_drag.getY());
         Point new_location = new Point((int) (this.start_loc.getX() + offset.getX()), (int) (this.start_loc.getY() + offset.getY()));
         this.setLocation(new_location);
+        this.getLocation();
+        System.out.println(this.getLocation().getX());
+        
+        System.out.println(this.getLocation().getY());
+        if(this.almace == 0){
+         if(this.getLocation().getX() == 45){
+            if(this.getLocation().getY() == 164){
+                JOptionPane.showMessageDialog(null, "colocado en el traila");
+            }
+         } 
+        }else if(this.almace == 1){
+            if(this.getLocation().getX() == 45){
+                if(this.getLocation().getY() == 164){
+                    JOptionPane.showMessageDialog(null, "colocado en el traila 1");
+                }
+             } 
+        }else if(this.almace == 2){
+            if(this.getLocation().getX() == 45){
+                if(this.getLocation().getY() == 164){
+                   JOptionPane.showMessageDialog(null, "colocado en el traila 2");
+                }
+            } 
+        }else if(this.almace == 3){
+            if(this.getLocation().getX() == 45){
+                if(this.getLocation().getY() == 164){
+                    JOptionPane.showMessageDialog(null, "colocado en el traila 3");
+                }
+         } 
+            
+        }
+        
+        
+       
     }
 
     @Override
