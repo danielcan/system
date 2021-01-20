@@ -10,5 +10,7 @@ package org.project.control;
  * @author PC-lite
  */
 public class mirro {
+    public void mirro(){
     
+    }
 }
