@@ -11,6 +11,6 @@ package org.project.control;
  */
 public class mirro {
     public void mirro(){
-    
+        System.out.println("hola");
     }
 }
